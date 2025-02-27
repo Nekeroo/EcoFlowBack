@@ -1,2 +1,14 @@
-greeting:
-  message: "hello"
+quarkus:
+  log:
+    level: ERROR
+  http:
+    host: "0.0.0.0"
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: ""  # Aucun mot de passe
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/ecoflow
+  hibernate-orm:
+    database:
+      generation: update
